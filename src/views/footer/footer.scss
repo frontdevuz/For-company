@@ -1,0 +1,45 @@
+.footer {
+    background: #000;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+
+    &__container {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        padding: 2rem .4rem;
+        gap: 1.5rem;
+    }
+
+    &__name {
+        font-size: 28px;
+        font-weight: 400;
+    }
+
+    &__about {
+        letter-spacing: 1px;
+        font-size: 16px;
+    }
+
+    &__social {
+        width: 200px;
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+
+        a {
+            margin-top: 6px;
+            transition: all .3s linear;
+
+            &:hover {
+                transform: translateY(-10px);
+                transition: all .3s linear;
+            }
+        }
+    }
+}

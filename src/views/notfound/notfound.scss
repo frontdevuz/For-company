@@ -1,0 +1,106 @@
+.notfound {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: white;
+
+    &__container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    &__about {
+        width: 100%;
+        height: 500px;
+        max-width: 550px;
+        background: linear-gradient(rgb(1, 9, 17), black);
+        backdrop-filter: blur(10px);
+        color: whitesmoke !important;
+        font-size: 20px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        border-radius: 30px;
+        gap: 2rem;
+        text-align: center;
+        box-shadow: 2px 0px 20px balck;
+    }
+
+
+    &__title {
+        font-size: 8rem;
+        font-weight: 600;
+        color: white;
+        animation: notfound 3.5s linear infinite;
+        margin-bottom: 1rem;
+
+        @keyframes notfound {
+            0% {}
+
+            25% {
+                transform: translateX(-50px);
+            }
+
+            50% {
+                transform: translateX(50px);
+            }
+
+            75% {
+                transform: translateY(-50px);
+            }
+
+            85% {
+                transform: translateY(50px);
+            }
+
+            100% {}
+        }
+    }
+
+    &__text {
+        animation: sorry 3s linear infinite;
+
+        @keyframes sorry {
+            0%{
+                
+            }
+            50%{
+                transform: translateX(100px);
+            }
+            75%{
+                transform: translateX(-100px);
+            }
+            100%{
+
+            }
+        }
+    }
+
+    &__link {
+        border-right: 2.5px solid white;
+        border-left: 2.5px solid white;
+        padding: 10px 35px;
+        font-size: 18px;
+        font-weight: 500;
+        background: transparent;
+        box-shadow: 0px 0px 10px white;
+        color: white;
+        transition: all .3s linear;
+        cursor: pointer;
+
+        &:hover {
+            padding: 10px 30px;
+        }
+    }
+}
+
+@media (max-width:500px) {
+    .notfound {
+        &__title {
+            font-size: 6rem;
+        }
+    }
+}

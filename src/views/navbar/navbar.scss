@@ -1,0 +1,122 @@
+.navbar {
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background: transparent;
+    padding: .9rem;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 20px 25px -5px, rgba(0, 0, 0, 0.04) 0px 10px 10px -5px;
+    background: rgba(255, 255, 255, 0.375);
+    backdrop-filter: blur(10px);
+    z-index: 999 !important;
+
+
+    &__container {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        flex-wrap: wrap;
+    }
+
+    &__items {
+        width: 500px;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        transition: .4s linear
+    }
+
+    &__logo {
+        display: flex;
+        align-items: center;
+        background: none;
+    }
+
+    &__logo-link {
+        background: none !important;
+    }
+
+    &__item__home {
+        display: none;
+        font-size: 18px;
+        font-weight: 500;
+        position: relative;
+        color: #000;
+
+        &:before {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 0px;
+            height: 2.5px;
+            bottom: -6px;
+            background: #000;
+            transition: all .3s;
+            border-radius: 20px;
+            -webkit-border-radius: 20px;
+            -moz-border-radius: 20px;
+            -ms-border-radius: 20px;
+            -o-border-radius: 20px;
+        }
+
+
+        &:hover::before {
+            width: 100%;
+            border-radius: 10px;
+            -webkit-border-radius: 10px;
+            -moz-border-radius: 10px;
+            -ms-border-radius: 10px;
+            -o-border-radius: 10px;
+        }
+    }
+
+    &__item-link {
+        font-size: 18px;
+        font-weight: 500;
+        position: relative;
+        color: #000;
+
+        &:before {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 0px;
+            height: 2.5px;
+            bottom: -6px;
+            background: #000;
+            transition: all .3s;
+            border-radius: 20px;
+            -webkit-border-radius: 20px;
+            -moz-border-radius: 20px;
+            -ms-border-radius: 20px;
+            -o-border-radius: 20px;
+        }
+
+
+        &:hover::before {
+            width: 100%;
+            border-radius: 10px;
+            -webkit-border-radius: 10px;
+            -moz-border-radius: 10px;
+            -ms-border-radius: 10px;
+            -o-border-radius: 10px;
+        }
+    }
+
+    &__item__x {
+        display: none;
+    }
+
+    .active {
+        color: white;
+        background: #000;
+        padding: 7px 15px;
+        border-radius: 10px;
+        text-transform: capitalize;
+        box-shadow: 1px 3px 15px black;
+
+    }
+
+}
