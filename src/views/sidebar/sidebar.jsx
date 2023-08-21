@@ -14,7 +14,6 @@ const Sidebar = () => {
         >
           <span className="sidebar__menu__item" id="one"></span>
           <span className="sidebar__menu__item" id="two"></span>
-          <span className="sidebar__menu__item" id="three"></span>
         </div>
       </div>
     </React.Fragment>

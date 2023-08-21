@@ -4,10 +4,9 @@
     top: 0;
     left: 0;
     background: transparent;
-    padding: .9rem;
-    box-shadow: rgba(0, 0, 0, 0.1) 0px 20px 25px -5px, rgba(0, 0, 0, 0.04) 0px 10px 10px -5px;
-    background: rgba(255, 255, 255, 0.375);
-    backdrop-filter: blur(10px);
+    padding: 1.5rem;
+    background: #ffffff;
+    backdrop-filter: blur(15px);
     z-index: 999 !important;
 
 
@@ -19,9 +18,9 @@
     }
 
     &__items {
-        width: 500px;
+        width: 600px;
         display: flex;
-        justify-content: space-around;
+        justify-content: space-between;
         align-items: center;
         transition: .4s linear
     }
@@ -29,47 +28,32 @@
     &__logo {
         display: flex;
         align-items: center;
-        background: none;
+    }
+
+    &__logo__title,
+    &__logo__pany {
+        font-size: 30px;
+        font-weight: 600;
+        color: #1BBD36;
+        text-transform: uppercase;
+    }
+
+    &__logo__pany {
+        font-weight: 500;
+        color: #000;
     }
 
     &__logo-link {
         background: none !important;
+        display: flex;
+        align-items: center;
     }
 
-    &__item__home {
+    &__items__sidebar {
+        background: transparent;
         display: none;
-        font-size: 18px;
-        font-weight: 500;
-        position: relative;
-        color: #000;
-
-        &:before {
-            content: '';
-            position: absolute;
-            bottom: 0;
-            left: 0;
-            width: 0px;
-            height: 2.5px;
-            bottom: -6px;
-            background: #000;
-            transition: all .3s;
-            border-radius: 20px;
-            -webkit-border-radius: 20px;
-            -moz-border-radius: 20px;
-            -ms-border-radius: 20px;
-            -o-border-radius: 20px;
-        }
-
-
-        &:hover::before {
-            width: 100%;
-            border-radius: 10px;
-            -webkit-border-radius: 10px;
-            -moz-border-radius: 10px;
-            -ms-border-radius: 10px;
-            -o-border-radius: 10px;
-        }
     }
+
 
     &__item-link {
         font-size: 18px;
@@ -84,8 +68,8 @@
             left: 0;
             width: 0px;
             height: 2.5px;
-            bottom: -6px;
-            background: #000;
+            bottom: -10px;
+            background: #1BBD36;
             transition: all .3s;
             border-radius: 20px;
             -webkit-border-radius: 20px;
@@ -111,12 +95,10 @@
 
     .active {
         color: white;
-        background: #000;
+        background: #1BBD36;
         padding: 7px 15px;
         border-radius: 10px;
         text-transform: capitalize;
-        box-shadow: 1px 3px 15px black;
-
+        box-shadow: 1px 3px 10px black;
     }
-
 }

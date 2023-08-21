@@ -1,7 +1,7 @@
 .sidebar {
     height: 35px;
     width: 40px;
-    visibility: visible;
+    background: none !important;
 
     &:hover {
         transform: scale(1.03);
@@ -11,9 +11,9 @@
 
     &__menu__item {
         width: 100%;
-        height: 5px;
+        height: 4px;
         border-radius: 5px;
-        background: black;
+        background: #1BBD36;
         transition: all .4s linear !important;
     }
 

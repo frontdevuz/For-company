@@ -1,7 +1,7 @@
 export const navbar = [{
     id: 1,
     title: "Bosh sahifa",
-    link: "home"
+    link: "/"
 }, {
     id: 2,
     title: "Biz haqimizda",

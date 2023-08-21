@@ -1,6 +1,6 @@
 .footer {
-    background: #000;
-    color: white;
+    background: #fff;
+    color: #000;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -12,13 +12,18 @@
         justify-content: center;
         align-items: center;
         text-align: center;
-        padding: 2rem .4rem;
+        padding: 1rem;
         gap: 1.5rem;
     }
 
     &__name {
         font-size: 28px;
         font-weight: 400;
+        color: #1BBD36;
+    }
+
+    &__span {
+        color: #000;
     }
 
     &__about {
@@ -33,12 +38,50 @@
         justify-content: space-around;
 
         a {
-            margin-top: 6px;
             transition: all .3s linear;
+            color: #000;
+            cursor: pointer;
+
+            &:nth-child(1) {
+                &:hover {
+                    color: darkblue;
+                }
+            }
+
+            &:nth-child(2) {
+                &:hover {
+                    color: dodgerblue;
+                }
+            }
+
+            &:nth-child(3) {
+                &:hover {
+                    color: red;
+                }
+            }
+
+            &:nth-child(4) {
+                &:hover {
+                    color: royalblue;
+                }
+            }
+
+            &:nth-child(5) {
+                &:hover {
+                    color: red;
+                }
+            }
+
+            i {
+                font-size: 22px;
+                cursor: pointer;
+                transition: all .3s linear;
+            }
 
             &:hover {
-                transform: translateY(-10px);
+                transform: translateY(-5px);
                 transition: all .3s linear;
+                cursor: pointer;
             }
         }
     }

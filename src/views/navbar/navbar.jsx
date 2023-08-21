@@ -1,11 +1,11 @@
 import React, { useRef, useEffect } from "react";
 import Container from "../../components/container/container";
 import { NavLink, Link } from "react-router-dom";
-import Logo from "../../assets/images/png/Anonim logo.png"
-import { navbar } from "../../data/navbar";
+// import Logo from "../../assets/images/png/Anonim logo.png";
 import Aos from "aos";
 import "aos/dist/aos.css";
 import Sidebar from "../sidebar/sidebar";
+import { navbar } from "../../data/navbar";
 import "./navbar.scss";
 const Navbar = () => {
   useEffect(() => {
@@ -22,13 +22,11 @@ const Navbar = () => {
           <div className="navbar__container">
             <div className="navbar__logo">
               <Link to={"/"} className="navbar__logo-link">
-                <img src={Logo} alt="This is a logo img" />
+                <p className="navbar__logo__title">Com</p>
+                <span className="navbar__logo__pany">pany</span>
               </Link>
             </div>
             <ul className="navbar__items" ref={navRef}>
-              <NavLink to={"/"} className={"navbar__item__home"} onClick={showNavbar}>
-                Home
-              </NavLink>
               {navbar.map((nav) => {
                 return (
                   <li
@@ -46,7 +44,7 @@ const Navbar = () => {
                     </NavLink>
                   </li>
                 );
-              })} 
+              })}
             </ul>
             <button className="navbar__items__sidebar" onClick={showNavbar}>
               <Sidebar />

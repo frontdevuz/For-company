@@ -1,0 +1,10 @@
+@media(max-width:1024px){
+    .navbar{
+        &__items__sidebar{
+            display: block;
+        }
+        &__items{
+            display: none;
+        }
+    }
+}
