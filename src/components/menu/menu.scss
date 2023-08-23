@@ -1,0 +1,31 @@
+.menu {
+    width: 100%;
+    margin-top: 5.5rem;
+    background: #1BBD36;
+
+    &__container {
+        padding: 2rem 0;
+        font-size: 18px;
+        color: #fff;
+        height: 40px;
+        text-transform: capitalize;
+        display: flex;
+        align-items: center;
+    }
+
+    &__link {
+        color: #000;
+        font-weight: 500;
+        transition: all .5s linear;
+
+        &:hover {
+            color: #fff;
+            transition: all .4s linear;
+        }
+    }
+
+    &__center {
+        color: #000;
+        margin: 0 .5rem;
+    }
+}

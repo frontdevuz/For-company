@@ -1,18 +1,18 @@
 export const navbar = [{
     id: 1,
-    title: "Bosh sahifa",
+    title: "Home",
     link: "/"
 }, {
     id: 2,
-    title: "Biz haqimizda",
+    title: "About us",
     link: "about"
 }, {
     id: 3,
-    title: "Xizmatlar",
+    title: "Services",
     link: "service"
 }, {
     Id: 4,
-    title: "Bog'lanish",
+    title: "Contact us",
     link: "contact"
 }
 ]

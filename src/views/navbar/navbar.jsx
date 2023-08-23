@@ -1,7 +1,6 @@
 import React, { useRef, useEffect } from "react";
 import Container from "../../components/container/container";
 import { NavLink, Link } from "react-router-dom";
-// import Logo from "../../assets/images/png/Anonim logo.png";
 import Aos from "aos";
 import "aos/dist/aos.css";
 import Sidebar from "../sidebar/sidebar";
